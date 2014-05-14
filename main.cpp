@@ -12,7 +12,6 @@ void agrega(string contOrden[], int numPalabra, string agrePalabra){
      aux=contOrden[k];
      contOrden[k]=contOrden[k-1];
      contOrden[k-1]=aux;
-
    }
 
   else break;
@@ -33,24 +32,24 @@ int main()
 
    cin>>pal;
     if(pal=="fin")
-   break;
+       break;
+       
    else
-
    {
-   rango[cont]=pal;
-    if(cont!=0)
-    agrega(rango, cont, pal);
-     cont++;
-   //cout<<"Lista: ";
-
-   for(int i=0; i<cont; i++){
-     cout<<rango[i]<<" ";
+    rango[cont]=pal;
+     if(cont!=0)
+     agrega(rango, cont, pal);
+      cont++;
+    //cout<<"Lista: ";
+ 
+    for(int i=0; i<cont; i++){
+      cout<<rango[i]<<" ";
+    }
+ 
+    cout<<endl;
    }
 
-   cout<<endl;
-   }
-
-   }
+}
 
  while(true);
 
